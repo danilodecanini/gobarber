@@ -3,13 +3,13 @@ import SignIn from './pages/SignIn';
 
 import GlobalStyles from './styles/global';
 
-import { AuthProvider } from './hooks/AuthContext';
+import AppProvider from './hooks';
 
 const App: React.FC = () => (
   <>
-    <AuthProvider>
+    <AppProvider>
       <SignIn />
-    </AuthProvider>
+    </AppProvider>
 
     <GlobalStyles />
   </>
